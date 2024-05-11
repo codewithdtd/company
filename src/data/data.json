@@ -1,0 +1,166 @@
+{
+  "Header": {
+    "title": "Create and grow your innovation in business today",
+    "paragraph": "Quick software development will bring your business onward and upward."
+  },
+  "About": {
+    "content": [
+      {
+        "image": "img/about-2.jpg",
+        "title": "Our Story",
+        "paragraph": [
+          "Started from 2016, we assembled a small team to offer software development service to serve out clients in Australia, United States, France and China.",
+          "We are focusing in software development advisory, UI/UX design, development and data processing services."
+        ]
+      },
+      {
+        "image": "img/about-1.jpg",
+        "title": "Why we are different",
+        "paragraph": [
+          "Making a product is different between the organization, but training, R&D process, and the maintaining product are the same. We don't need to re-invent the wheel to make a new product.",
+          "Our services will help your company save 30-60% cost to acquire new technology to leverage in the business."
+        ]
+      }
+    ],
+    "footer": [
+      {
+        "title": "Super Effcient",
+        "paragraph": "We optimize your cost in any aspect of building a new product."
+      },
+      {
+        "title": "DeeplyCommited",
+        "paragraph": "We are based on SCRUM and constanly working with you as the same team."
+      },
+      {
+        "title": "Highly Skilled",
+        "paragraph": "We roughly a decade of working in the software development industry, we confidently you advice."
+      }
+    ],
+    "founder": {
+      "name": "Tony Doan",
+      "image": "img/avt.png"
+    }
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Services": [
+    {
+      "image": "img/service-3.jpg",
+      "name": "UI/UX Design",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "image": "img/service-1.jpg",
+      "name": "Web App Development",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "image": "img/service-4.jpg",
+      "name": "Data processing service ",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "60 Vu Tong Phan Street, An Phu Ward, Thu Duc City, Ho Chi Minh City, Vietnam",
+    "phone": "09xx xxx xxx",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-check",
+      "title": "Fixed Price Projects",
+      "text": "Base con SCRUM, you offer you dynamic of princing modal easy cost control."
+    },
+    {
+      "icon": "fa fa-check",
+      "title": "On budget on time",
+      "text": "With commitment an every task we made, we give you power of future prediction."
+    },
+    {
+      "icon": "fa fa-check",
+      "title": "Fast work turnaround",
+      "text": "Highly trained and skilled development tteam bring speed development."
+    }
+  ]
+}
