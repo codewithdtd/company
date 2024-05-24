@@ -21,12 +21,13 @@ export const Gallery = (props) => {
                     key={`${d.title}-${i}`}
                     className="col-sm-6 col-md-6 col-lg-6"
                   >
-                    <Parallax startScroll={3000} endScroll={4200} scale={[0.3,1, 'easeInOutQuint']}>
+                    <Parallax style={{transition: "all 2s ease"}} startScroll={3400} endScroll={3600} scale={[0,1, 'easeInOutQuint']}>
                     <Image
                       title={d.title}
                       largeImage={d.largeImage}
                       smallImage={d.smallImage}
                       text={d.text}
+                      id={d.id}
                     />
                     </Parallax>
                   </div>

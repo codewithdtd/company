@@ -12,12 +12,12 @@ export const Services = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className="row">
+        <div style={{overflow: "hidden"}} className="row">
           {props.data
             ? props.data.map((d, i) => {
               if(i%2 === 0)
-                return <Parallax translateX={['-300px','50px','easeOutCubic']} opacity={[0, 3,'easeOutCubic']}>  
-                <div key={`${d.name}-${i}`} className="row">
+                return <Parallax style={{transition: "all 3s ease"}} startScroll={2300} endScroll={2500} translateX={['-300px','0px','easeOutCubic']} opacity={[0, 3,'easeOutCubic']}>  
+               <div key={`${d.name}-${i}`} className="row">
                   {" "}
                   <div className="col-md-6 col-xs-6 image">
                     <img src={d.image} alt="" />
@@ -28,9 +28,9 @@ export const Services = (props) => {
                     <button className="">LEARN MORE</button>
                   </div>
                 </div>
-                </Parallax>
+              </Parallax>
               else 
-              return <Parallax startScroll={2000} endScroll={4000} translateX={['300px','-30px','easeOutCubic']} opacity={[0, 3,'easeOutCubic']}>  
+              return <Parallax style={{transition: "all 3s ease"}} startScroll={2300} endScroll={2500} translateX={['300px','0px','easeOutCubic']} opacity={[0, 3,'easeOutCubic']}>  
                 <div key={`${d.name}-${i}`} className="row">
                   {" "}
                   <div className="service-desc col-md-6 col-xs-6">
@@ -42,7 +42,7 @@ export const Services = (props) => {
                     <img src={d.image} alt="" />
                   </div>
                 </div>
-                </Parallax>
+              </Parallax>
               })
             : "loading"}
         </div>

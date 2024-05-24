@@ -13,6 +13,9 @@ import SmoothScroll from "smooth-scroll";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 import "./App.css";
+import { Outlet, Route, Routes } from "react-router-dom";
+import LangdingPage from "./components/landingPage";
+import { CaseStudiesDetail } from "./components/caseStudiesDetail";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -27,17 +30,20 @@ const App = () => {
 
   return (
     <ParallaxProvider>
-    {/* <div> */}
       <Navigation />
-      <Header data={landingPageData.Header} />
+      {/* <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />
-      {/* <Team data={landingPageData.Team} /> */}
+      <Contact data={landingPageData.Contact} /> */}
+      <Routes>
+        <Route path='/' element={<LangdingPage />} />
+        <Route path='/detail/:id' element={<CaseStudiesDetail />}></Route>
+      </Routes>
+      <Outlet />
       <Contact data={landingPageData.Contact} />
-    {/* </div> */}
     </ParallaxProvider>
   );
 };

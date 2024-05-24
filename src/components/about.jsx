@@ -12,14 +12,14 @@ export const About = (props) => {
                 ? props.data.content.map((d, i) => {
                   if(i%2 !== 0)
                     return <div key={i} className="row content content--two">
-                              <div className="col-xs-12 col-md-6">
-                                <Parallax startScroll={450} endScroll={2500} translateX={['-200px','20px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
+                              <div style={{overflow: "hidden"}} className="col-xs-12 col-md-6">
+                                <Parallax style={{transition: "all 0.5s ease-in"}} startScroll={800} endScroll={1100} translateX={['-200px','20px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
                                   {" "}
                                   <img src={d.image} className="img-responsive" alt="" />{" "}
                                 </Parallax>
                               </div>
-                            <div className="col-xs-12 col-md-6 content-text">
-                              <Parallax startScroll={700} endScroll={2500} translateX={['200px','-20px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
+                            <div style={{overflow: "hidden"}} className="col-xs-12 col-md-6 content-text">
+                              <Parallax style={{transition: "all 0.5s ease-in"}} startScroll={800} endScroll={1100} translateX={['200px','20px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
                                 <h3>{d.title}</h3>
                                 {props.data
                                   ? d.paragraph.map((p, i) => (
@@ -32,8 +32,8 @@ export const About = (props) => {
                           </div>
                   else 
                     return <div key="i" className="row content content">
-                            <div className="col-xs-12 col-md-6 content-text">
-                              <Parallax translateX={['-200px','20px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
+                            <div style={{overflow: "hidden"}} className="col-xs-12 col-md-6 content-text">
+                              <Parallax style={{transition: "all 0.5s ease-in"}} startScroll={800} endScroll={1100} translateX={['-200px','0px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
                                 <h3>{d.title}</h3>
                                 {props.data
                                   ? d.paragraph.map((p, i) => (
@@ -43,8 +43,8 @@ export const About = (props) => {
                                   : "loading"}
                               </Parallax>
                             </div>
-                            <div className="col-xs-12 col-md-6">
-                              <Parallax translateX={['200px','-20px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
+                            <div style={{overflow: "hidden"}} className="col-xs-12 col-md-6">
+                              <Parallax style={{transition: "all 0.5s ease-in"}} startScroll={800} endScroll={1100} translateX={['200px','0px','easeOutCubic']} opacity={[0.5, 5,'easeOutCubic']}>
                                 {" "}
                                 <img src={d.image} className="img-responsive" alt="" />{" "}
                               </Parallax>
@@ -52,7 +52,7 @@ export const About = (props) => {
                           </div>
                   })
                 : "loading"}
-                <Parallax opacity={[0,3]}>
+                <Parallax style={{transition: "all 0.2s ease-in"}} opacity={[0,4]}>
                   <div className="row footer">
                     {props.data
                         ? props.data.footer.map((p, i) => (
@@ -66,7 +66,7 @@ export const About = (props) => {
                   </div>
                 </Parallax>
             </div>
-            <Parallax opacity={[0, 4]}>
+            <Parallax style={{transition: "all 0.5s ease-in"}} opacity={[0, 4]}>
                 
             {props.data ? (
               <div className="row founder">

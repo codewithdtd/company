@@ -1,4 +1,7 @@
 import React from "react";
+// import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export const Navigation = (props) => {
   return (
@@ -17,12 +20,12 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <RouterLink className="navbar-brand page-scroll" to="/" onClick={() => scroll.scrollToTop()}>
             <span>
-              <img src="img/logo.png" alt="" />
-              UPORA
+              <img src="../img/logo.png" alt="" />
+              Pandobit
             </span>
-          </a>{" "}
+          </RouterLink>{" "}
         </div>
 
         <div
@@ -31,39 +34,39 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             {/* <li>
-              <a href="#features" className="page-scroll">
+              <Link to="features" className="page-scroll">
                 Features
-              </a>
+              </Link>
             </li> */}
             <li>
-              <a href="#about" className="page-scroll">
+              <ScrollLink smooth={true}  to="about" className="page-scroll">
                 About
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <ScrollLink smooth={true}  to="services" className="page-scroll">
                 Services
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#case-studies" className="page-scroll">
+              <ScrollLink smooth={true}  to="case-studies" className="page-scroll">
                 Case studies
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
+              <ScrollLink smooth={true}  to="testimonials" className="page-scroll">
                 Conferences
-              </a>
+              </ScrollLink>
             </li>
             {/* <li>
-              <a href="#team" className="page-scroll">
+              <ScrollLink smooth={true}  to="team" className="page-scroll">
                 Team
-              </a>
+              </ScrollLink>
             </li> */}
             <li>
-              <a href="#contact" className="page-scroll">
+              <ScrollLink smooth={true}  to="contact" className="page-scroll">
                 Contact
-              </a>
+              </ScrollLink>
             </li>
           </ul>
         </div>

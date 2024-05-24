@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const initialState = {
   name: "",
@@ -27,13 +29,12 @@ export const Contact = (props) => {
       .sendForm("service_km4fqmm", "template_dicpsxq", e.target, "5uO4MHMg4g1Gj0yjN")
       .then(
         (result) => {
-          window.alert('Your contact have been sent')
           e.target.reset();
-          console.log(result.text);
+          toast.success('Your message was been seen success.')
           clearState();
         },
         (error) => {
-          window.alert('Error !!!')
+          toast.error('An error has occurred. Please try again.')
           console.log(error.text);
         }
       );
@@ -45,6 +46,7 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
+                <Toaster />
                 <h2>Get In Touch</h2>
                 <p>
                   Please fill out the form below to send us an email and we will
@@ -156,7 +158,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 Upora. All Rights Reserved.
+            &copy; 2024 Pandobit. All Rights Reserved.
           </p>
         </div>
       </div>

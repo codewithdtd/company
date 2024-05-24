@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ParallaxBanner } from 'react-scroll-parallax';
+import { Particle } from "./particle";
 
 export const Header = (props) => {
   const [pageLoad, setPageLoad] = useState(false);
@@ -11,14 +11,9 @@ export const Header = (props) => {
   }, []);
 
   return (
-    <header id="header">
-      <ParallaxBanner
-        layers={[
-          { image: 'img/intro-bg-4.jpg', scale: [1, 1.8, 'easeInQuad'] },
-        ]}
-        className="aspect-[2/1]"
-      >
+    <header style={{overflow: "hidden"}} id="header">
       <div className="intro">
+        <Particle />
         <div className="overlay">
           <div className="container">
             <div className="row">
@@ -45,7 +40,6 @@ export const Header = (props) => {
           </div>
         </div>
       </div>
-      </ParallaxBanner>
     </header>
   );
 };
