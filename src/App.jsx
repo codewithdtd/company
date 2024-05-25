@@ -9,12 +9,30 @@ import "./App.css";
 import { Outlet, Route, Routes } from "react-router-dom";
 import LangdingPage from "./components/landingPage";
 import { CaseStudiesDetail } from "./components/caseStudiesDetail";
+import { useLocation } from "react-router-dom";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
+const ScrollToSection = () => {
+  const location = useLocation();
 
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      console.log(hash);
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
+
+  return null;
+};
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
@@ -24,6 +42,7 @@ const App = () => {
   return (
     <ParallaxProvider>
       <Navigation />
+      <ScrollToSection />
       <Routes>
         <Route path='/' element={<LangdingPage />} />
         <Route path='/detail/:id' element={<CaseStudiesDetail />}></Route>

@@ -33,40 +33,37 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-            {/* <li>
-              <Link to="features" className="page-scroll">
-                Features
-              </Link>
-            </li> */}
             <li>
-              <ScrollLink smooth={true}  to="about" className="page-scroll">
+              <RouterLink className="page-scroll" to="/#about">
                 About
-              </ScrollLink>
+              </RouterLink>
+
+              {/* <ScrollLink smooth={true}  to="about" className="page-scroll">
+                About
+              </ScrollLink> */}
             </li>
             <li>
-              <ScrollLink smooth={true}  to="services" className="page-scroll">
+              <RouterLink smooth={true} className="page-scroll" to="/#services" >
                 Services
-              </ScrollLink>
+              </RouterLink>
+              {/* <ScrollLink smooth={true}  to="services" className="page-scroll">
+                Services
+              </ScrollLink> */}
             </li>
             <li>
-              <ScrollLink smooth={true}  to="case-studies" className="page-scroll">
+              <RouterLink smooth={true} className="page-scroll" to="/#case-studies" >
                 Case studies
-              </ScrollLink>
+              </RouterLink>
             </li>
             <li>
-              <ScrollLink smooth={true}  to="testimonials" className="page-scroll">
+              <RouterLink smooth={true} className="page-scroll" to="/#testimonials" >
                 Conferences
-              </ScrollLink>
+              </RouterLink>
             </li>
-            {/* <li>
-              <ScrollLink smooth={true}  to="team" className="page-scroll">
-                Team
-              </ScrollLink>
-            </li> */}
             <li>
-              <ScrollLink smooth={true}  to="contact" className="page-scroll">
+              <RouterLink smooth={true} className="page-scroll" to="/#contact" >
                 Contact
-              </ScrollLink>
+              </RouterLink>
             </li>
           </ul>
         </div>

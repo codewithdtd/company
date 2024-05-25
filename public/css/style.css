@@ -861,3 +861,18 @@ label {
   width: 80%;
   object-fit: cover;
 }
+
+#menu.navbar-default .navbar-nav .nav-btn > a {
+  color: #000;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#menu.navbar-default .navbar-nav > .nav-btn > a:hover:after {
+  width: 0px;
+} 
+#menu.navbar-default .navbar-nav > .nav-btn > a:hover {
+  background-color: #dadada;
+} 
