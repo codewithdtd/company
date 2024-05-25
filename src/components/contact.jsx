@@ -26,7 +26,7 @@ export const Contact = (props) => {
 
     
     emailjs
-      .sendForm("service_km4fqmm", "template_dicpsxq", e.target, "5uO4MHMg4g1Gj0yjN")
+      .sendForm("service_km4fqmm", "template_dicpsxq", e.target, "5uO4MHMg4g1Gj0yjNN")
       .then(
         (result) => {
           e.target.reset();
